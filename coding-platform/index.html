@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - CodePractice</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="dashboard">
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="main">
+      <h1 id="welcome" class="page-title">Welcome</h1>
+      <section class="stats">
+        <div class="card stat"><span class="num-big" id="statTotal">0</span><span class="muted">Total problems</span></div>
+        <div class="card stat"><span class="num-big" id="statSolved">0</span><span class="muted">Solved</span></div>
+        <div class="card stat"><span class="num-big" id="statUnsolved">0</span><span class="muted">Unsolved</span></div>
+        <div class="card stat"><span class="num-big" id="statStreak">0</span><span class="muted">Current streak</span></div>
+      </section>
+      <section class="card">
+        <h3 id="progressText"></h3>
+        <div class="progress"><div id="progressFill" class="progress-fill"></div></div>
+        <pre id="progressAscii" class="ascii"></pre>
+        <a class="btn primary" href="problems.html">Go to practice</a>
+      </section>
+      <div class="two-col">
+        <section class="card" id="daily"><h3>🔥 Daily Challenge</h3><div id="dailyBox"></div></section>
+        <section class="card"><h3>🏆 Leaderboard</h3>
+          <p class="note">Demo only: these users are fictional and this is not an online ranking.</p>
+          <div id="leaderboard"></div></section>
+      </div>
+      <section class="card"><h3>Recently attempted</h3><div id="recentList"></div></section>
+    </main>
+  </div>
+  <div id="toast"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

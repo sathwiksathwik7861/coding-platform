@@ -1,0 +1,21 @@
+/* responsive.css - tablet and phone layouts */
+@media (max-width: 1000px) {
+  .problem-layout { grid-template-columns: 1fr; }   /* editor goes below the problem */
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .two-col { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .layout { grid-template-columns: 1fr; }
+  /* sidebar becomes a bottom navigation bar */
+  .sidebar { position: fixed; bottom: 0; left: 0; right: 0; top: auto; height: auto; flex-direction: row; padding: .3rem; z-index: 40; border-right: none; border-top: 1px solid var(--border); }
+  .brand { display: none; }
+  .theme-btn { margin: 0; padding: .4rem; font-size: .7rem; }
+  .nav { flex-direction: row; width: 100%; justify-content: space-around; }
+  .nav a { font-size: .68rem; padding: .4rem .2rem; text-align: center; flex: 1; }
+  .nav a:hover { padding-left: .2rem; }
+  .main { padding: 1rem 1rem 5rem; }
+  .problem-row { grid-template-columns: 2.5rem 1fr 2rem; }
+  .problem-row .tag, .problem-row .status { display: none; }
+  .problem-row .badge { grid-column: 2; justify-self: start; }
+  .inline-form { flex-direction: column; }
+}

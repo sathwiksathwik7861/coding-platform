@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Problem - CodePractice</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="problems">
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="main">
+      <div id="problemPage">
+        <a href="problems.html" class="muted">&larr; Back to problems</a>
+        <div class="problem-layout">
+          <section class="card" id="problemPanel"></section>
+          <section class="card editor-card">
+            <div class="toolbar">
+              <select id="languageSelect" class="input select">
+                <option value="c">C</option><option value="cpp">C++</option>
+                <option value="python">Python</option><option value="javascript">JavaScript</option>
+              </select>
+              <span class="note">Frontend simulation: code is not compiled</span>
+            </div>
+            <div class="editor-wrap">
+              <pre id="lineNumbers" class="line-numbers">1</pre>
+              <textarea id="codeEditor" spellcheck="false" wrap="off"></textarea>
+            </div>
+            <div class="btn-row">
+              <button id="runBtn" class="btn ghost">&#9654; Run Code</button>
+              <button id="submitBtn" class="btn primary">Submit</button>
+              <button id="resetBtn" class="btn ghost">Reset Code</button>
+            </div>
+            <h4>Output</h4>
+            <div id="consoleBox" class="console">Press Run Code or Submit to see a result here.</div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="toast"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/problem.js"></script>
+</body>
+</html>

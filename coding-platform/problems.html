@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Problems - CodePractice</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="problems">
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="main">
+      <h1 class="page-title">💻 Problems</h1>
+      <div class="card">
+        <input id="searchInput" class="input" type="search" placeholder="Search problems by title..." autocomplete="off">
+        <p id="searchMessage" class="error-text"></p>
+        <div class="chip-row" id="difficultyChips"></div>
+        <div class="chip-row" id="topicChips"></div>
+      </div>
+      <p id="count" class="muted"></p>
+      <div id="problemList" class="card list"></div>
+    </main>
+  </div>
+  <div id="toast"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/problems.js"></script>
+</body>
+</html>
